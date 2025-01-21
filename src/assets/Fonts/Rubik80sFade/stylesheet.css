@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Rubik 80s Fade';
+    src: url('Rubik80sFade-Regular.eot');
+    src: local('Rubik 80s Fade Regular'), local('Rubik80sFade-Regular'),
+        url('Rubik80sFade-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Rubik80sFade-Regular.woff2') format('woff2'),
+        url('Rubik80sFade-Regular.woff') format('woff'),
+        url('Rubik80sFade-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
