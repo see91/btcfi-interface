@@ -66,7 +66,7 @@ const PageHome = (props: any) => {
                 staking token (LST)
               </div>
               <div className="ctx-3 css-btn-click orange-white">
-                <span>pBTC</span>
+                <span className="family-proto">pBTC</span>
                 <i className="i-arrow"></i>
               </div>
             </div>
@@ -84,7 +84,7 @@ const PageHome = (props: any) => {
                 price increase
               </div>
               <div className="ctx-3 css-btn-click orange-white">
-                <span>pUSD</span>
+                <span className="family-proto">pUSD</span>
                 <i className="i-arrow"></i>
               </div>
             </div>
