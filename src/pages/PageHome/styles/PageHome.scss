@@ -65,6 +65,9 @@
 
       .menu-item {
         cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
       }
     }
   }
@@ -233,7 +236,6 @@
 
   .com-pusd {
     margin-top: 292px;
-
     .title {
       color: #F5F5F5;
       text-align: center;
@@ -279,16 +281,19 @@
         }
         &.time-1 {
           width: 260px;
+          height: 197px;
           margin-bottom: 32px;
           margin-right: 80px;
         }
         &.time-2 {
           width: 260px;
+          height: 197px;
           margin-bottom: 32px;
           margin-right: 80px;
         }
         &.time-3 {
           width: 260px;
+          height: 197px;
           margin-bottom: 32px;
           margin-right: 260px;
         }
@@ -309,7 +314,8 @@
     .pos {
       position: absolute;
       &.pos-t1 {
-        top: 90px;
+        display: none !important;
+        top: 112px;
         left: 0;
         display: flex;
         align-items: center;
@@ -349,7 +355,8 @@
         background-size: 100% 100%;
       }
       &.pos-t4 {
-        top: 90px;
+        display: none !important;
+        top: 112px;
         left: 338px;
         display: flex;
         align-items: center;
@@ -388,7 +395,8 @@
         background-size: 100% 100%;
       }
       &.pos-t7 {
-        top: 90px;
+        display: none !important;
+        top: 112px;
         left: 678px;
         display: flex;
         align-items: center;
@@ -464,4 +472,114 @@
       }
     }
   }
+  .i-con-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    background: rgba(0, 1, 2, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    margin-bottom: 14px;
+  }
+  .i-coin-t1 {
+    display: block;
+    width: 40px;
+    height: 36.667px;
+    background-image: url('../../../assets/images/i-t1.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(15deg);
+  }
+  .i-coin-t2 {
+    display: block;
+    width: 36px;
+    height: 37px;
+    background-image: url('../../../assets/images/i-t2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .i-coin-t3 {
+    display: block;
+    width: 36px;
+    height: 37px;
+    background-image: url('../../../assets/images/i-t3.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #root {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .page_home {
+    .page-all {
+      width: 100%;
+    }
+    .com-header {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 20px;
+      .menus {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .menu-item {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          justify-content: center;
+        }
+      }
+    }
+    .com-banner {
+      margin-top: 113px;
+      .title {
+        gap: 0;
+        flex-direction: column;
+      }
+      .size-120 {
+        font-size: 60px;
+        line-height: 70px;
+      }
+      .size-80 {
+        font-size: 40px;
+        line-height: 48px;
+      }
+      .btns {
+        flex-direction: column;
+      }
+      .notice {
+        margin-top: 132px;
+      }
+    }
+    .com-together {
+      margin-top: 80px;
+      .context {
+        flex-direction: column;
+        margin: 80px auto 0 auto;
+      }
+    }
+    .com-pusd {
+      .times {
+        flex-direction: column;
+        .time-item {
+          margin-right: 0 !important;
+          width: 100% !important;
+          padding: 0 40px;
+        }
+      }
+      .pos {
+        display: none !important;
+      }
+    }
+  }
+  
 }
