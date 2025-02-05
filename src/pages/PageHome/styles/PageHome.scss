@@ -145,7 +145,6 @@
       color: #FFF;
       text-align: center;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      font-size: 54px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -240,7 +239,6 @@
       color: #F5F5F5;
       text-align: center;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      font-size: 54px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -273,7 +271,7 @@
         }
         .t-notice {
           color: rgba(255, 255, 255, 0.7);
-          font-size: 12px;
+          // font-size: 12px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -310,6 +308,9 @@
         }
       }
       
+    }
+    .pos-wap {
+      display: none !important;
     }
     .pos {
       position: absolute;
@@ -512,6 +513,40 @@
 }
 
 @media screen and (max-width: 960px) {
+  /*font-size*/
+  .size-32 {
+    font-size: 16px !important;
+  }
+  .size-24 {
+    font-size: 12px !important;
+  }
+  .size-36 {
+    font-size: 18px !important;
+  }
+  .size-120 {
+    font-size: 30px !important;
+  }
+  .size-12 {
+    font-size: 8px !important;
+  }
+  .css-btn-click {
+    font-size: 12px !important;
+    width: 110px;
+    height: 34px;
+    gap: 16px;
+    .i-arrow {
+      background-size: 50% 50%;
+      background-position: center center;
+    }
+  }
+  .page_home .com-banner .notice {
+    font-size: 12px !important;
+  }
+  
+  .size-54 {
+    font-size: 27px !important;
+  }
+  /*other*/
   #root {
     min-width: 100%;
     max-width: 100%;
@@ -525,25 +560,29 @@
       align-items: flex-start;
       justify-content: flex-start;
       gap: 20px;
+      padding: 22px 0;
       .menus {
-        flex-direction: column;
         gap: 15px;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
+        padding-right: 8px;
         .menu-item {
           display: flex;
           align-items: center;
           gap: 40px;
           justify-content: center;
+          .css-btn {
+            padding: 6px 12px;
+          }
         }
       }
     }
     .com-banner {
       margin-top: 113px;
+      gap: 16px;
       .title {
-        gap: 0;
-        flex-direction: column;
+        gap: 5px;
       }
       .size-120 {
         font-size: 60px;
@@ -555,9 +594,23 @@
       }
       .btns {
         flex-direction: column;
+        gap: 22px;
+        .css-btn-click {
+          width: 110px;
+          height: 34px;
+          gap: 15px;
+          .i-arrow {
+            background-size: 50% 50%;
+            background-position: center center;
+          }
+        }
       }
       .notice {
         margin-top: 132px;
+      }
+      .click-next {
+        width: 60px;
+        height: 40px;
       }
     }
     .com-together {
@@ -565,15 +618,85 @@
       .context {
         flex-direction: column;
         margin: 80px auto 0 auto;
+        .context-item {
+          padding: 30px 30px;
+          .ctx-1 {
+            .logo {
+              width: 50px;
+              height: 50px;
+              .i-logo {
+                width: 50px;
+                height: 50px;
+              }
+            }
+            .text {
+              font-size: 14px;
+            }
+          }
+          .ctx-2 {
+            font-size: 8px;
+            margin-bottom: 16px;
+          }
+        }
       }
     }
     .com-pusd {
+      margin-top: 146px;
       .times {
         flex-direction: column;
+        margin-top: 40px;
         .time-item {
           margin-right: 0 !important;
           width: 100% !important;
           padding: 0 40px;
+          height: auto !important;
+        }
+        .i-con-box {
+          width: 40px;
+          height: 40px;
+          .i-coin-t1 {
+            width: 20px;
+            height: 18px;
+          }
+          .i-coin-t2 {
+            width: 18px;
+            height: 18px;
+          }
+          .i-coin-t3 {
+            width: 18px;
+            height: 18px;
+          }
+        }
+        .time-4 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          width: 100%;
+          gap: 10px;
+          padding: 0 8px;
+          >.time-item {
+            width: 33% !important;
+            padding: 0 0;
+            &.time-6 {
+              margin-top: 0;
+            }
+            &.time-7 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      .pos-wap {
+        display: flex !important;
+        align-items: center;
+        .jt {
+          display: flex;
+          width: 123px;
+          height: 10px;
+          background-image: url('../../../assets/images/pos-jt.svg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          transform: rotate(90deg);
         }
       }
       .pos {
